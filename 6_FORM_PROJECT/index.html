@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petal Palette</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Bloom Your Way | Petal Palette</h3>
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <p>Form</p>
+        </div>
+        <div class="form-body">
+          <h1 class="form-title">Craft Your Perfect Bouquet</h1>
+          <p>Describe and choose from the options</p>
+          <form>
+            <div class="box-input">
+              <label for="title"
+                >Custom Bouquet Name
+                <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Name This Special Arrangement"
+                minlength="1"
+                maxlength="25"
+                required
+              />
+            </div>
+
+            <div class="box-input">
+              <label for="flower-quantity"
+                >Number of Stems <span class="required-field">*</span></label
+              >
+              <input
+                type="number"
+                name="flower-quantity"
+                id="flower-quantity"
+                class="block"
+                placeholder="Enter number of stems"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="special-instructions"
+                >Special Instructions
+                <span class="required-field">*</span></label
+              >
+              <textarea
+                name="special-instructions"
+                id="special-instructions"
+                class="block"
+                placeholder="Any specific requests or notes?"
+              ></textarea>
+            </div>
+            <div class="box-input">
+              <label for="flower-type"
+                >Select Flowers Type
+                <span class="required-field">*</span></label
+              >
+              <select
+                id="flower-type"
+                name="flower-type"
+                class="block"
+                multiple
+              >
+                <option value="roses">Roses</option>
+                <option value="tulips">Tulips</option>
+                <option value="lilies">Lilies</option>
+                <option value="sunflowers">Sunflowers</option>
+                <option value="orchids">Orchids</option>
+                <option value="daisies">Daises</option>
+              </select>
+            </div>
+            <div class="box-input">
+              <label for="flower-color"
+                >Flower Colors <span class="required-field">*</span></label
+              >
+              <select
+                name="flower-color"
+                id="flower-color"
+                class="block"
+                multiple
+              >
+                <option value="pink">Pink</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+                <option value="mixed">Mixed</option>
+              </select>
+            </div>
+            <div class="box-input">
+              <label for="delivery-date"
+                >Delivery Date <span class="required-field">*</span></label
+              >
+              <input
+                type="date"
+                name="delivery-date"
+                id="delivery-date"
+                class="block"
+                required
+              />
+            </div>
+            <div class="extras">
+              <p>Additional Options</p>
+              <ul class="extras-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="vase"
+                    name="extras[]"
+                    value="vase"
+                  />
+                  <label for="vase">Include Vase</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="chocolate"
+                    name="extras[]"
+                    value="chocolate"
+                  />
+                  <label for="chocolate">Add Chocolate</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="card"
+                    name="extras[]"
+                    value="card"
+                  />
+                  <label for="card">Message Card</label>
+                </li>
+              </ul>
+            </div>
+            <div class="box-input">
+              <p>Message Card Occasion</p>
+              <input type="radio" name="card-occasion" id="birthday" />
+              <label for="birthday">Birthday</label>
+              <input type="radio" name="card-occasion" id="sympathy" />
+              <label for="sympathy">Sympathy</label>
+              <input type="radio" name="card-occasion" id="romantic" />
+              <label for="romantic">Romantic</label>
+            </div>
+            <div class="box-input">
+              <p>Polaroids:</p>
+              <input
+                type="file"
+                multiple
+                accept="image/jpg, image/png"
+                id="images"
+                name="images"
+              />
+            </div>
+            <input type="submit" value="Enviar" class="btn-submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
